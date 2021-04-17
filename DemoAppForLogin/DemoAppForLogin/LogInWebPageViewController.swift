@@ -24,9 +24,6 @@ class LogInWebPageViewController: UIViewController {
             let qiitaRequest = URLRequest(url: unwrapURL)
             webView.load(qiitaRequest)
         }
-        
     }
-    
-
 
 }
