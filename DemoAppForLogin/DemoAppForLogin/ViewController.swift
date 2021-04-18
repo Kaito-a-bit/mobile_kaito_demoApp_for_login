@@ -27,7 +27,8 @@ class FirstViewController: UIViewController {
             next.inheritedUrl = self.urlToInherit
         }
     }
-
-
+ 
+    
+    
 }
 
