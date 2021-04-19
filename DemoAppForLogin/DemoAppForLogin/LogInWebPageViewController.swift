@@ -24,9 +24,12 @@ class LogInWebPageViewController: UIViewController {
             let qiitaRequest = URLRequest(url: unwrapURL)
             webView.load(qiitaRequest)
         }
-        
     }
     
-
-
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.request.url?.scheme == "log-app", navigationAction.request.url?.host == "oauth-callback" {
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
 }

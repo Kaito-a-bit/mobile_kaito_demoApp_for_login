@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     var urlToInherit: String!
     
@@ -27,7 +27,8 @@ class ViewController: UIViewController {
             next.inheritedUrl = self.urlToInherit
         }
     }
-
-
+ 
+    
+    
 }
 
